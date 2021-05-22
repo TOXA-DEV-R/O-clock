@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.oclock {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: url("../images/clock.png") no-repeat center center/cover;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.oclock-basic {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  position: relative;
+}
+.oclock-basic .oclock-minutes-init .line {
+  width: 6px;
+  height: 70px;
+  margin-top: 9px;
+}
+.oclock-basic .oclock-hours-init .line {
+  width: 8px;
+  height: 56px;
+  margin-top: 18px;
+}
+.oclock-seconds, .oclock-minutes, .oclock-hours {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.oclock-seconds-init, .oclock-minutes-init, .oclock-hours-init {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transform: rotate(0);
+}
+.oclock-seconds-init .line, .oclock-minutes-init .line, .oclock-hours-init .line {
+  width: 3px;
+  height: 70px;
+  margin: auto;
+  margin-top: 9px;
+  background: #000;
+  border-radius: 100% 100% 0 0;
+}
+
+/*# sourceMappingURL=style.css.map */
